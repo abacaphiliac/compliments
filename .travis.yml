@@ -18,6 +18,3 @@ before_script:
   - composer install --no-interaction
 script:
   - ./vendor/bin/phing
-after_script:
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
