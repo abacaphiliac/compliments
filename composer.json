@@ -1,0 +1,30 @@
+{
+    "name": "abacaphiliac/compliments",
+    "description": "Compliments your sys-admins, in an effort to strengthen the developer-administrator bond.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Timothy Younger",
+            "email": "abacaphiliac@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "symfony/console": "^3|^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Abacaphiliac\\Compliments\\": "src/Compliments"
+        }
+    },
+    "require-dev": {
+        "jakub-onderka/php-parallel-lint": "^0.9",
+        "mikey179/vfsStream": "^1.6",
+        "phing/phing": "^2.9",
+        "phpunit/phpunit": "^5|^4",
+        "squizlabs/php_codesniffer": "^2.2"
+    },
+    "bin": [
+        "bin/compliments"
+    ]
+}
